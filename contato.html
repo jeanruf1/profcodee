@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prof Code CONTATOS</title>
+</head>
+<body>
+    <header>
+        <style>
+            .banner {
+                width: 100%;
+                max-width: 100%;
+                height: auto;
+                max-height: 550px;
+            }
+            .ref {
+                display: flex;
+                gap: 20px;
+                padding-left: 33%;
+            }
+            .ref a {
+                font-size: 30px;
+                font-weight: bold;
+            }
+            form {
+                max-width: 600px;
+                margin: 0 auto;
+                padding: 10px;
+                background: #f9f9f9;
+                border-radius: 6px;
+            }
+            input[type="text"],
+            input[type="email"],
+            textarea {
+                width: 100%;
+                padding: 10px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+            input[type="submit"] {
+                background-color: #4CAF50;
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+            input[type="submit"]:hover {
+                background-color: #45a049;
+            }
+        </style>
+        <img class="banner" src="img/vscode-extensions-1-1024x512.png" width="960"> 
+        <nav add class="ref"> 
+            <a href="index.html"> Home</a>
+            <a href="musicas.html"> Musicas</a>
+            <a href="aulas.html"> Aulas</a>
+            <a href="planos.html"> Planos</a>
+            <a href="contato.html"> Contato</a>
+        </nav> <br>
+        
+    </header>
+
+    <form action="emails/" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
